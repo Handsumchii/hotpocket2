@@ -1,0 +1,100 @@
+/* 1. Use a more intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin & padding */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 3. Improve text rendering & accessibility */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 4. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 5. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 6. Improve text wrapping */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /* 7. Navigation Bar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Navigation Items Container */
+  .nav-items {
+    display: flex;
+    gap: 15px; /* Adds space between items */
+  }
+  
+  /* Navigation Items */
+  .nav-item {
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .nav-item:hover {
+    background-color: #555;
+    border-radius: 5px;
+    color: #ffdd57; /* Slight yellow contrast for better visibility */
+  }
+  
+  /* Responsive Navigation for Mobile */
+  @media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+  
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+  }

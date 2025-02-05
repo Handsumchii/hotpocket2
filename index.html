@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title>Part 1</title>
+  <style>
+    /* Reset styles for consistency */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 15px 30px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Logo container (image + text) */
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Logo Image */
+    .logo img {
+      width: 200px;  /* Adjust image size */
+      height: auto;
+      margin-right: 10px; /* Space between image and text */
+    }
+
+    /* Navigation Items */
+    .nav-item {
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .nav-item:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    /* Flexbox Container */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    /* Boxes */
+    .box {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      background: lightblue;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div id="logo" class="logo">
+      <img src="/images/blackredwood-small.png" alt="Logo"> <!-- Replace with your actual image path -->
+      DEVIN 
+    </div>
+    <div id="home" class="nav-item">Home</div>
+    <div id="about" class="nav-item">About</div>
+    <div id="services" class="nav-item">Services</div>
+    <div id="contact" class="nav-item">Contact</div>
+  </nav>
+
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+</body>
+</html>
